@@ -13,4 +13,20 @@ const reverseString = (funcStr: string): string => {
   return funcStr.split('').reverse().join('')
 }
 
-console.log(reverseString('prodip'))
+// console.log(reverseString('prodip'))
+
+/**
+ * Problem - 03
+ */
+
+type StringOrNumber = string | number
+const checkType = (param: StringOrNumber): string => {
+  if(typeof param === 'string'){
+    return 'String'
+  } else {
+    return 'Number'
+  }
+}
+
+console.log(checkType(23))
+console.log(checkType('is'))

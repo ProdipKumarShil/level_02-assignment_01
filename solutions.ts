@@ -28,6 +28,27 @@ const checkType = (param: StringOrNumber): string => {
   }
 }
 
+/**
+ * Problem - 04
+ */
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+interface BookWithReadStatus extends Book {
+  isRead: boolean;
+}
+
+const toggleReadStatus = (book: Book): BookWithReadStatus => {
+  return {
+    ...book,
+    isRead: true,
+  };
+};
+
 // console.log(checkType(23))
 // console.log(checkType('is'))
 

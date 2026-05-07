@@ -61,3 +61,24 @@ class Student extends Person{
 // const student1 = new Student("saber", 55, "C");
 
 // console.log(student.getDetails())
+
+
+/**
+ * Problem - 07
+ */
+
+const getIntersection = (param1: number[], param2: number[]): number[] => {
+  let arr: number[] = []
+  
+  param1.map((num: number) => {
+    param2.map((num2: number) => {
+      if(num === num2){
+        arr.push(num)
+      }
+    })
+  })
+
+  return arr
+}
+
+console.log(getIntersection([9, 8, 7, 3, 1], [0, 9, 4, 7, 8]))

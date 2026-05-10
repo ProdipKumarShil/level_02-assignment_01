@@ -2,9 +2,6 @@ const filterEvenNumbers = (arr: number[]): number[] => {
   return arr.filter((num: number) => num % 2 == 0)
 }
 
-// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]))
-
-
 /**
  * Problem - 02
  */
@@ -12,8 +9,6 @@ const filterEvenNumbers = (arr: number[]): number[] => {
 const reverseString = (funcStr: string): string => {
   return funcStr.split('').reverse().join('')
 }
-
-// console.log(reverseString('prodip'))
 
 /**
  * Problem - 03
@@ -49,9 +44,6 @@ const toggleReadStatus = (book: Book): BookWithReadStatus => {
   };
 };
 
-// console.log(checkType(23))
-// console.log(checkType('is'))
-
 /**
  * Problem - 05
  */
@@ -86,11 +78,6 @@ class Student extends Person{
   }
 }
 
-// const student = new Student("Alice", 20, "A");
-// const student1 = new Student("saber", 55, "C");
-
-// console.log(student.getDetails())
-
 
 /**
  * Problem - 07
@@ -109,5 +96,3 @@ const getIntersection = (param1: number[], param2: number[]): number[] => {
 
   return arr
 }
-
-console.log(getIntersection([9, 8, 7, 3, 1], [0, 9, 4, 7, 8]))
